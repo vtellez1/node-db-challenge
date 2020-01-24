@@ -5,9 +5,9 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('projects').insert([
-        {name: '', description: '', completed: ''},
-        {name: '', description: '', completed: ''},
-        {name: '', description: '', completed: ''},
+        {name: 'Finish Lambda School', description: 'Learn some code to get a cool job.', completed: false},
+        {name: 'Get some Sleep', description: 'Catch those ZZZs', completed: false},
+        {name: 'Build a Snowman', description: 'Olaf inspired snowman', completed: false},
       ]);
     });
 };
